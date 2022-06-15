@@ -581,6 +581,9 @@ ul {
   .section__food__img-left {
     padding-left: 0;
   }
+  .get-updates__input {
+    padding: 0;
+  }
 }
 
 @media (max-width: 1130px) {
