@@ -3,19 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Gothic A1", sans-serif;
   font-size: 16px;
-  /* background: linear-gradient(
-      252deg,
-      #450e4b 0%,
-      #3c0c41 24.48%,
-      rgba(207, 0, 99, 0) 100%
-    ),
-    #cf0063; */
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -23,12 +14,13 @@ a {
 ul {
   list-style: none;
 }
-
 .container {
   max-width: 1340px;
   margin: 0 auto;
   padding: 0 20px;
 }
+/* Header
+================ */
 .header {
   height: 100vh;
   background: linear-gradient(
@@ -101,7 +93,8 @@ ul {
   bottom: 0%;
 }
 
-/* Section */
+/* Section 
+================*/
 .section {
   background: #1b1b1b;
   margin-bottom: 80px;
@@ -142,9 +135,8 @@ ul {
   margin-bottom: -4px;
 }
 
-/* Main */
-
-/* Section 2 */
+/* Section 2 
+================*/
 .section__content {
   display: flex;
   justify-content: space-between;
@@ -192,7 +184,8 @@ ul {
   margin-right: 144px;
 }
 
-/* Aside */
+/* Aside 
+================*/
 
 .aside__advantages {
   display: flex;
@@ -219,7 +212,8 @@ ul {
 
   color: #6b6b6b;
 }
-/* Aside 2 */
+/* Aside 2 
+================*/
 
 .aside__numbers {
   display: flex;
@@ -245,7 +239,8 @@ ul {
   line-height: 24px;
 }
 
-/* Section */
+/* Section 
+================*/
 
 .section__food {
   margin-bottom: 160px;
@@ -277,7 +272,7 @@ ul {
   color: #000000;
 }
 .section__food-text {
-  width: 330px;
+  max-width: 330px;
 
   font-weight: 400;
   font-size: 16px;
@@ -307,7 +302,8 @@ ul {
   margin: 0 auto;
   margin-bottom: 67px;
 }
-/* Slider */
+/* Slider 
+================*/
 .slider {
   position: relative;
   margin-bottom: 100px;
@@ -364,7 +360,8 @@ ul {
   color: #6b6b6b;
 }
 
-/* button */
+/* button 
+================*/
 .slider .slick-dots {
   display: flex;
   justify-content: center;
@@ -521,7 +518,8 @@ ul {
   display: flex;
   gap: 0px;
 }
-
+/* Footer 
+================*/
 .footer {
   background: #1b1b1b;
 }
@@ -555,7 +553,8 @@ ul {
   text-decoration: underline;
 }
 
-/* media */
+/* Media 
+================*/
 @media (max-width: 1200px) {
   .section__img {
     width: 100%;
@@ -589,8 +588,7 @@ ul {
     margin-right: 67px;
   }
 }
-
-@media (max-width: 911px) {
+@media (max-width: 1027px) {
   .section__content {
     flex-direction: column;
     align-items: center;
@@ -696,7 +694,20 @@ ul {
     flex-wrap: wrap;
   }
   .get-updates__input {
-    padding: 20px 7px 22px 5px;
+    padding: 15px 0 15px 5px;
+  }
+  .get-updates__btn {
+    padding: 0px 25px 0 25px;
+  }
+  .aside__numbers {
+    display: none;
+  }
+  .phone-bg {
+    display: none;
+  }
+  .slider__item {
+    font-size: 16px;
+    margin-bottom: 0;
   }
 }
 
@@ -731,7 +742,7 @@ ul {
     font-size: 14px;
   }
   .aside__advantages__text {
-    width: 320px;
+    max-width: 320px;
   }
   .get-updates__input {
     padding: 20px 7px 22px 5px;
@@ -741,13 +752,36 @@ ul {
     gap: 0;
   }
 }
-
-@media (max-width: 320px) {
+@media (max-width: 349px) {
+  .advantages {
+    text-align: left;
+    max-width: 100%;
+  }
+}
+@media (max-width: 321px) {
   .header__title {
     margin-top: 52px;
   }
   .section__title-heading {
     font-size: 18px;
     max-width: 284px;
+  }
+  .get-updates__input {
+    font-size: 12px;
+    padding: 10px 20px 10 10px;
+  }
+  .get-updates__btn {
+    font-size: 12px;
+    padding: 10px 20px 10px 10px;
+  }
+  .section__content-title {
+    font-size: 27px;
+    line-height: 30px;
+  }
+  .section__img-phone {
+    width: 100%;
+  }
+  .aside__advantages {
+    display: none;
   }
 }
