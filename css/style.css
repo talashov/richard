@@ -754,6 +754,14 @@ ul {
     flex-direction: column;
     gap: 0;
   }
+  .get-form {
+    flex-direction: column;
+  }
+  .get-updates__btn,
+  .get-updates__input {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+  }
 }
 @media (max-width: 349px) {
   .advantages {
